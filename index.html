@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LocalStorage CRUD App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card p-4">
+            <h2 class="text-center mb-4">📋 LocalStorage CRUD App</h2>
+
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <input type="text" id="name" class="form-control" placeholder="👤 Enter Name">
+                </div>
+                <div class="col-md-6">
+                    <input type="number" id="age" class="form-control" placeholder="🎂 Enter Age">
+                </div>
+                <div class="col-md-6">
+                    <input type="email" id="email" class="form-control" placeholder="📧 Enter Email">
+                </div>
+                <div class="col-md-6">
+                    <input type="text" id="address" class="form-control" placeholder="🏠 Enter Address">
+                </div>
+                <div class="col-12 text-center mt-3">
+                    <button class="btn btn-success px-4" id="Submit" onclick="addData()">➕ Add</button>
+                    <button class="btn btn-primary px-4" id="Update" onclick="updateData()" style="display: none;">🔄
+                        Update</button>
+                </div>
+            </div>
+
+            <hr class="text-secondary mt-4">
+
+            <div class="table-responsive mt-3">
+                <table class="table table-bordered text-center align-middle" id="crudTable">
+                    <thead>
+                        <tr>
+                            <th>👤 Name</th>
+                            <th>🎂 Age</th>
+                            <th>📧 Email</th>
+                            <th>🏠 Address</th>
+                            <th>⚙️ Action</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+body {
+    background-color: #f7f9fc;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.2);
+}
+
+table {
+    background-color: #ffffff;
+}
+
+th,
+td {
+    vertical-align: middle;
+}
+
+.btn {
+    border-radius: 8px;
+}
+
+h2 {
+    font-weight: 600;
+    color: #007bff;
+}
+
+.table thead {
+    background-color: #f1f3f5;
+}
